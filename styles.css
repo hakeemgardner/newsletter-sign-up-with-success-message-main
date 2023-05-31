@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem;
+}
+
+.text-content {
+  padding: 4rem 1.2rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.email-input {
+  display: block;
+  padding: 13px 80px;
+  border-radius: 0.3rem;
+  border-width: thin;
+  margin-top: 0.6rem;
+}
+
+.subcribe {
+  display: block;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  color: white;
+  padding: 13px 60px;
+  border-radius: 0.3rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+form {
+  margin-top: 1.5rem;
+}
+
+.subcribe:hover {
+  background-color: hsl(4, 100%, 67%);
+  color: white;
+}
+
+.list-icon {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.email-label {
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.thanks-modal {
+  display: none;
+  background-color: white;
+  border-radius: 1.5rem;
+  height: 400px;
+  width: 400px;
+  padding: 2rem 2.5rem;
+  translate: 10rem -30rem;
+}
+h2 {
+  font-size: 36px;
+  margin-top: 1.5rem;
+  line-height: 2.2rem;
+  margin-bottom: 1rem;
+}
+.ref-email {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+.dismiss {
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  color: white;
+  padding: 10px 85px;
+  border-radius: 0.3rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.dismiss:hover {
+  color: white;
+  background-color: hsl(4, 100%, 67%);
+}
+.para-main {
+  margin-bottom: 1rem;
+}
+.error-message {
+  display: none;
+  margin-left: 5.5rem;
+  color: hsl(4, 100%, 67%);
+}
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 376px) {
+  .main-content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0rem;
+    width: 100vw;
+  }
+  .thanks-modal {
+    position: absolute;
+
+    height: 100%;
+    width: 100vw;
+    padding: 8rem 1rem;
+    translate: -6rem -53.8rem;
+    border-radius: 0;
+  }
+  .subcribe {
+    padding: 18px 80px;
+
+    font-size: 12px;
+  }
+}
